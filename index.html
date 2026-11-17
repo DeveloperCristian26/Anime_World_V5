@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime World: Misión Lógica</title>
+  <meta name="description"
+    content="Videojuego educativo hecho en Scratch para fortalecer el pensamiento lógico-matemático en grado sexto: combates de anime y retos de programación." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <a href="#inicio" class="logo">
+      <img src="img/Logo.jpg" alt="Anime World">
+      <span>Misión Lógica</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#proyecto">Proyecto</a></li>
+      <li><a href="#juego">El juego</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#personajes">Personajes</a></li>
+      <li><a href="#controles">Controles</a></li>
+      <li><a href="#logica">Lógica</a></li>
+      <li><a href="#bitacora">Bitácora</a></li>
+      <li><a href="#creditos">Créditos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / Inicio -->
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <span class="badge">Proyecto educativo hecho en Scratch</span>
+      <h1>Anime World <span>Misión Lógica</span></h1>
+      <p>Un videojuego de combates donde cada rival se desbloquea respondiendo un reto de programación. Creado para
+        fortalecer el pensamiento lógico-matemático en estudiantes de grado sexto del colegio Germán Arciniegas.</p>
+      <div class="hero-actions">
+        <!-- Cambia este enlace por el de tu proyecto publicado en Scratch -->
+        <a href="https://scratch.mit.edu/projects/1441068545/editor" class="btn btn-primary" target="_blank" rel="noopener">Jugar en Scratch</a>
+        <a href="#historia" class="btn btn-ghost">Ver la historia</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cifras del juego -->
+  <section class="stats" aria-label="Cifras del juego">
+    <div class="stat"><strong>9</strong><span>luchadores</span></div>
+    <div class="stat"><strong>4</strong><span>combates de historia</span></div>
+    <div class="stat"><strong>4</strong><span>retos de lógica</span></div>
+    <div class="stat"><strong>2</strong><span>modos de juego</span></div>
+    <div class="stat"><strong>162</strong><span>poses de combate</span></div>
+  </section>
+
+  <main class="container">
+
+    <!-- Proyecto: problema, pregunta, justificación -->
+    <section id="proyecto" class="section reveal">
+      <p class="eyebrow">El proyecto</p>
+      <h2 class="section-title">¿Por qué un videojuego?</h2>
+      <div class="grid-3">
+        <article class="card tone-blue">
+          <h3>Identificación del problema</h3>
+          <p>En los estudiantes de grado sexto se ha identificado un conocimiento limitado sobre el uso del programa
+            Scratch y sobre los procesos necesarios para diseñar y crear un videojuego. Esta situación dificulta la
+            aplicación visible del pensamiento lógico-matemático en actividades de programación.</p>
+        </article>
+        <article class="card tone-red">
+          <h3>Pregunta problema</h3>
+          <p class="question">¿Cómo fortalecer el pensamiento lógico-matemático en los estudiantes de grado sexto
+            mediante el aprendizaje del programa Scratch y la creación de un videojuego sencillo?</p>
+        </article>
+        <article class="card tone-orange">
+          <h3>Justificación</h3>
+          <p>A través de la creación de videojuegos interactivos, los estudiantes aprenden a organizar instrucciones y
+            establecer secuencias lógicas. Scratch permite convertir las dificultades de aprendizaje en una experiencia
+            práctica, dinámica y autónoma que despierta el interés por la tecnología.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos" class="section reveal">
+      <p class="eyebrow">Hacia dónde vamos</p>
+      <h2 class="section-title">Objetivos del proyecto</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Objetivo general</h3>
+          <p>Fortalecer el desarrollo del pensamiento lógico-matemático en estudiantes de grado sexto mediante el uso de
+            Scratch, enseñando conceptos básicos de programación y pasos de diseño para resolver problemas de forma
+            creativa.</p>
+        </article>
+        <article class="card">
+          <h3>Objetivos específicos</h3>
+          <ul class="check-list">
+            <li>Enseñar bloques de instrucciones, movimientos, eventos y secuencias lógicas en Scratch.</li>
+            <li>Desarrollar razonamiento lógico mediante la resolución práctica de problemas.</li>
+            <li>Guiar en el diseño y desarrollo de videojuegos sencillos aplicando lógica matemática.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Marco teórico -->
+    <section id="marco" class="section reveal">
+      <p class="eyebrow">En qué nos apoyamos</p>
+      <h2 class="section-title">Marco teórico</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Pensamiento lógico-matemático</h3>
+          <p>Habilidad para analizar información, establecer relaciones, reconocer patrones y resolver situaciones de
+            manera estructurada.</p>
+        </article>
+        <article class="card">
+          <h3>Scratch en la educación</h3>
+          <p>Entorno gráfico desarrollado por el MIT que permite aprender programación mediante bloques visuales sin
+            necesidad de código escrito complejo.</p>
+        </article>
+        <article class="card">
+          <h3>Videojuegos educativos</h3>
+          <p>Estrategia que fomenta el aprendizaje por experimentación, obligando a planificar reglas, secuencias,
+            condiciones y evaluación de errores.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- El juego -->
+    <section id="juego" class="section reveal">
+      <p class="eyebrow">El videojuego</p>
+      <h2 class="section-title">Así se juega</h2>
+      <p class="lead">Los mundos del anime se han fusionado. Para abrirse paso, el jugador debe demostrar que entiende
+        cómo piensa un programa: cada reto de lógica superado abre la puerta al siguiente combate.</p>
+
+      <div class="grid-2">
+        <article class="mode-card mode-story">
+          <span class="mode-tag">1 jugador</span>
+          <h3>Modo Historia · 1 vs COM</h3>
+          <p>Goku enfrenta a cuatro rivales controlados por el computador. Antes de cada combate hay un reto de
+            programación; después, una recompensa. El rival persigue, golpea, lanza poderes y se vuelve más agresivo en
+            cada combate.</p>
+        </article>
+        <article class="mode-card mode-versus">
+          <span class="mode-tag">2 jugadores</span>
+          <h3>Modo Versus · 1 vs 1</h3>
+          <p>Dos jugadores en el mismo teclado. Cada uno elige su luchador en una pantalla de cartas: solo se pueden
+            escoger los personajes ya desbloqueados en la historia.</p>
+        </article>
+      </div>
+
+      <div class="loop">
+        <div class="loop-step"><b>1</b><span>Video de la escena</span></div>
+        <div class="loop-step"><b>2</b><span>Reto de lógica</span></div>
+        <div class="loop-step"><b>3</b><span>Combate</span></div>
+        <div class="loop-step"><b>4</b><span>Personaje desbloqueado</span></div>
+      </div>
+
+      <div class="grid-2 feedback">
+        <article class="feedback-card ok">
+          <h4>Respuesta correcta</h4>
+          <p>Aparece el cartel <strong>¡Correcto!</strong> con una frase que refuerza el concepto y comienza el combate.
+          </p>
+        </article>
+        <article class="feedback-card hint">
+          <h4>Respuesta incorrecta</h4>
+          <p>Aparece el cartel <strong>¡Casi!</strong> con una pista. No se pierde nada: el estudiante puede intentarlo
+            otra vez las veces que necesite.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="section reveal">
+      <p class="eyebrow">Modo historia</p>
+      <h2 class="section-title">Cuatro retos, cuatro rivales</h2>
+      <ol class="timeline">
+        <li class="arc arc-1">
+          <div class="arc-head">
+            <span class="arc-num">1</span>
+            <div>
+              <span class="arc-topic">Variables</span>
+              <h3>Rival: Naruto</h3>
+            </div>
+          </div>
+          <blockquote>«La vida de Naruto empieza en 10. Cada golpe le quita 1 punto, y el número va cambiando. ¿Cómo se
+            llama el espacio donde el programa guarda ese número que cambia?»</blockquote>
+          <p class="arc-reward">Recompensa: Naruto se une a tu lista de luchadores.</p>
+        </li>
+        <li class="arc arc-2">
+          <div class="arc-head">
+            <span class="arc-num">2</span>
+            <div>
+              <span class="arc-topic">Bucles</span>
+              <h3>Rival: Luffy</h3>
+            </div>
+          </div>
+          <blockquote>«Luffy quiere dar 10 puñetazos seguidos. En vez de poner el bloque “golpear” diez veces, usa un
+            solo bloque que repite la acción. ¿Cómo se llama este tipo de bloque?»</blockquote>
+          <p class="arc-reward">Recompensa: Luffy desbloqueado.</p>
+        </li>
+        <li class="arc arc-3">
+          <div class="arc-head">
+            <span class="arc-num">3</span>
+            <div>
+              <span class="arc-topic">Condicionales</span>
+              <h3>Rival: Freezer</h3>
+            </div>
+          </div>
+          <blockquote>«Freezer dice: “Si tu vida llega a 0, pierdes”. En Scratch, ¿qué tipo de bloque permite que algo
+            pase solo si se cumple esa condición?»</blockquote>
+          <p class="arc-reward">Recompensa: Freezer desbloqueado.</p>
+        </li>
+        <li class="arc arc-4">
+          <div class="arc-head">
+            <span class="arc-num">4</span>
+            <div>
+              <span class="arc-topic">Refuerzo · jefe final</span>
+              <h3>Rival: Madara</h3>
+            </div>
+          </div>
+          <blockquote>«Madara cuenta sus golpes en un número que va subiendo y, si llegan a 5, se detiene. ¿Qué dos
+            elementos usa para contar y para decidir cuándo parar?»</blockquote>
+          <p class="arc-reward">Recompensa final: Madara, Broly, Kaido y Saitama.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Personajes -->
+    <section id="personajes" class="section reveal">
+      <p class="eyebrow">Elige tu luchador</p>
+      <h2 class="section-title">Personajes</h2>
+      <div class="roster">
+        <figure class="fighter"><img src="img/personajes/goku.svg" alt="Carta de Goku">
+          <figcaption><b>Goku</b><span class="tag tag-free">Desde el inicio</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/vegeta.svg" alt="Carta de Vegeta">
+          <figcaption><b>Vegeta</b><span class="tag tag-free">Desde el inicio</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/naruto.svg" alt="Carta de Naruto">
+          <figcaption><b>Naruto</b><span class="tag tag-story">Combate 1</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/luffy.png" alt="Carta de Luffy">
+          <figcaption><b>Luffy</b><span class="tag tag-story">Combate 2</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/freezer.svg" alt="Carta de Freezer">
+          <figcaption><b>Freezer</b><span class="tag tag-story">Combate 3</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/madara.png" alt="Carta de Madara">
+          <figcaption><b>Madara</b><span class="tag tag-story">Combate 4</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/broly.png" alt="Carta de Broly">
+          <figcaption><b>Broly</b><span class="tag tag-final">Premio final</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/kaido.png" alt="Carta de Kaido">
+          <figcaption><b>Kaido</b><span class="tag tag-final">Premio final</span></figcaption>
+        </figure>
+        <figure class="fighter"><img src="img/personajes/saitama.png" alt="Carta de Saitama">
+          <figcaption><b>Saitama</b><span class="tag tag-final">Premio final</span></figcaption>
+        </figure>
+      </div>
+      <p class="note">Cada luchador tiene 18 poses propias: reposo, caminar, guardia, golpes, patada, golpe fuerte,
+        poder, teletransporte, victoria, daño y derrota.</p>
+    </section>
+
+    <!-- Controles y combate -->
+    <section id="controles" class="section reveal">
+      <p class="eyebrow">Manos al teclado</p>
+      <h2 class="section-title">Controles y reglas del combate</h2>
+      <div class="table-wrap">
+        <table class="controls">
+          <thead>
+            <tr>
+              <th>Acción</th>
+              <th>Jugador 1</th>
+              <th>Jugador 2</th>
+              <th>Daño</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Moverse</td>
+              <td><kbd>A</kbd> <kbd>D</kbd></td>
+              <td><kbd>←</kbd> <kbd>→</kbd></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Saltar</td>
+              <td><kbd>W</kbd></td>
+              <td><kbd>↑</kbd></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Golpe</td>
+              <td><kbd>Z</kbd></td>
+              <td><kbd>1</kbd></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Patada</td>
+              <td><kbd>X</kbd></td>
+              <td><kbd>2</kbd></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Golpe fuerte</td>
+              <td><kbd>C</kbd></td>
+              <td><kbd>3</kbd></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Teletransporte con golpe</td>
+              <td><kbd>F</kbd></td>
+              <td><kbd>4</kbd></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Impulso rápido</td>
+              <td><kbd>V</kbd></td>
+              <td><kbd>5</kbd></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Poder a distancia</td>
+              <td><kbd>Q</kbd></td>
+              <td><kbd>6</kbd></td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid-3 rules">
+        <article class="rule">
+          <h4>30 puntos de vida</h4>
+          <p>Cada luchador empieza con 30. La barra baja en el momento del impacto y pierde quien llegue primero a 0.
+          </p>
+        </article>
+        <article class="rule">
+          <h4>Solo cuenta el impacto real</h4>
+          <p>Un golpe hace daño si el atacante mira al rival y este está dentro del alcance. Cada golpe resta vida una
+            sola vez.</p>
+        </article>
+        <article class="rule">
+          <h4>Tiempos de espera</h4>
+          <p>El poder a distancia se recarga en 1 segundo y el teletransporte en 2. Quien recibe un golpe queda aturdido
+            un instante.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- La lógica por dentro -->
+    <section id="logica" class="section reveal">
+      <p class="eyebrow">Lo que se aprende, se usa</p>
+      <h2 class="section-title">La lógica por dentro</h2>
+      <p class="lead">Los mismos conceptos que el estudiante responde en los retos son los que hacen funcionar el juego.
+      </p>
+      <div class="grid-3">
+        <article class="concept">
+          <span class="chip chip-orange">Variables</span>
+          <p>Guardan lo que cambia: la vida de cada luchador, el número de combate y si el juego está en pausa.</p>
+        </article>
+        <article class="concept">
+          <span class="chip chip-green">Condicionales</span>
+          <p><em>Si</em> la vida es menor que 1, <em>entonces</em> termina el combate. <em>Si</em> la respuesta es
+            correcta, avanza; <em>si no</em>, muestra la pista.</p>
+        </article>
+        <article class="concept">
+          <span class="chip chip-blue">Bucles</span>
+          <p>Un «por siempre» revisa las teclas en cada instante, y un «repetir» pasa los cuadros de cada video uno por
+            uno.</p>
+        </article>
+        <article class="concept">
+          <span class="chip chip-purple">Mensajes</span>
+          <p>Los objetos se avisan entre sí: «jugar» inicia el combate y «terminó combate» muestra al ganador.</p>
+        </article>
+        <article class="concept">
+          <span class="chip chip-red">Listas</span>
+          <p>Una lista recuerda qué personajes están desbloqueados y otra guarda los atributos de cada jugador.</p>
+        </article>
+        <article class="concept">
+          <span class="chip chip-yellow">Clones</span>
+          <p>La barra de vida son 30 clones que desaparecen uno a uno; los poderes y las cartas también son clones.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bitácora -->
+    <section id="bitacora" class="section reveal">
+      <p class="eyebrow">Probar, encontrar el error, corregir</p>
+      <h2 class="section-title">Bitácora de desarrollo</h2>
+      <div class="log">
+        <article class="log-item">
+          <span class="version">v3</span>
+          <div>
+            <h4>Diagnóstico</h4>
+            <p>La historia se detenía después del segundo combate, el rival del computador no se movía y la carta
+              elegida en el modo versus no cambiaba al luchador.</p>
+          </div>
+        </article>
+        <article class="log-item">
+          <span class="version">v4</span>
+          <div>
+            <h4>El juego completo</h4>
+            <p>Historia de principio a fin con sus cuatro retos y videos, rival automático, selección de personajes
+              conectada a los desbloqueos, daño distinto por ataque, salto con gravedad y poses de victoria y derrota.
+            </p>
+          </div>
+        </article>
+        <article class="log-item">
+          <span class="version">v5</span>
+          <div>
+            <h4>Identidad e impactos <small>en pruebas</small></h4>
+            <p>Naruto recibió sus propios disfraces (antes compartía los de Goku), se corrigieron la patada y el golpe
+              fuerte de Luffy, y los impactos ahora se detectan por alcance y dirección para todos los personajes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Créditos -->
+    <section id="creditos" class="section reveal">
+      <p class="eyebrow">Quiénes lo hicieron</p>
+      <h2 class="section-title">Información del proyecto</h2>
+      <div class="credits-card">
+        <div class="credit-item">
+          <strong>Autores</strong>
+          <p>Cristian Ocampo &amp; Santiago Pulgarín</p>
+        </div>
+        <div class="credit-item">
+          <strong>Institución</strong>
+          <p>Universidad Pedagógica - Instituto Técnico Central</p>
+        </div>
+        <div class="credit-item">
+          <strong>Asignatura y docente</strong>
+          <p>Lógica Matemática | Lina Nuñez</p>
+        </div>
+        <div class="credit-item">
+          <strong>Ubicación</strong>
+          <p>Bogotá, Colombia</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Anime World: Misión Lógica. Proyecto educativo de Lógica Matemática.</p>
+    <p class="disclaimer">Proyecto académico sin ánimo de lucro. Los personajes pertenecen a sus respectivos autores.</p>
+  </footer>
+
+  <script>
+    // Aparición suave de las secciones al hacer scroll
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      items.forEach((el) => io.observe(el));
+    } else {
+      items.forEach((el) => el.classList.add('visible'));
+    }
+  </script>
+
+</body>
+
+</html>
